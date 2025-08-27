@@ -24,7 +24,9 @@
     outline: none;
     list-style: none;
 }
-
+:root {
+    --main-color: #02b66b;
+}
 body {
     color: #fff;
     background-color: #0f0f0f;
@@ -197,11 +199,11 @@ figure {
 }
 
 .main-color {
-    color: #fd5b38 !important;
+    color: var(--main-color) !important;
 }
 
 .main-colorbg {
-    background: #fd5b38 !important;
+    background: var(--main-color) !important;
 }
 
 .main-color2 {
@@ -662,7 +664,7 @@ figure {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: #fd5b38;
+    background: var(--main-color);
     -webkit-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0);
@@ -672,7 +674,7 @@ figure {
 }
 
 .btn-circle:hover {
-    border-color: #fd5b38;
+    border-color: var(--main-color);
 }
 
 .btn-circle:hover:after {
@@ -931,7 +933,7 @@ figure {
 }
 
 .vi-more:hover .icon {
-    background: #fd5b38;
+    background: var(--main-color);
 }
 
 /* Cursor
@@ -3774,7 +3776,7 @@ body.loaded {
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background: #fd5b38;
+    background: var(--main-color);
     position: absolute;
     top: 50%;
     left: 15px;
@@ -4034,7 +4036,7 @@ body.loaded {
     line-height: 40px;
     text-align: center;
     border-radius: 50%;
-    background: #fd5b38;
+    background: var(--main-color);
     color: #0c0c0c;
     font-size: 20px;
 }
@@ -4274,7 +4276,7 @@ body.loaded {
 }
 
 .sidebar .widget.tags a:hover {
-    background: #fd5b38;
+    background: var(--main-color);
 }
 
 .blog-main .item .content {
@@ -4390,7 +4392,7 @@ body.loaded {
 
 .main-post .info-area .tags a:hover,
 .main-post .info-area .share-icon a:hover {
-    background: #fd5b38;
+    background: var(--main-color);
     color: #1d1d1d;
 }
 
@@ -5128,7 +5130,7 @@ footer.clean-footer.crev .circle-blur {
     height: 85px;
     line-height: 85px;
     text-align: center;
-    background: #fd5b38;
+    background: var(--main-color);
     position: absolute;
     top: 0;
     left: 100px;
@@ -5174,7 +5176,7 @@ footer.clean-footer.crev .circle-blur {
     line-height: 60px;
     text-align: center;
     border-radius: 50%;
-    border: 1px solid #fd5b38;
+    border: 1px solid var(--main-color);
     margin-left: -20px;
 }
 
@@ -6151,7 +6153,7 @@ footer.clean-footer.crev .circle-blur {
 
 .filtering span.active {
     opacity: 1;
-    color: #fd5b38;
+    color: var(--main-color);
 }
 
 .filtering span.text {
@@ -6454,7 +6456,7 @@ footer.clean-footer.crev .circle-blur {
 }
 
 .services-clas .item a:hover {
-    background: #fd5b38;
+    background: var(--main-color);
 }
 
 .services-inline2 .item {
@@ -6505,7 +6507,7 @@ footer.clean-footer.crev .circle-blur {
     line-height: 100px;
     text-align: center;
     border-radius: 50%;
-    background: #fd5b38;
+    background: var(--main-color);
     position: absolute;
     top: 20px;
     right: 20px;
@@ -7300,8 +7302,8 @@ footer.clean-footer.crev .circle-blur {
 }
 
 .team .item .social .links a:hover {
-    background: #fd5b38;
-    border-color: #fd5b38;
+    background: var(--main-color);
+    border-color: var(--main-color);
     color: #111;
 }
 
@@ -7428,7 +7430,7 @@ footer.clean-footer.crev .circle-blur {
 }
 
 .team-crev2 .item .img .social a:hover {
-    background: #fd5b38;
+    background: var(--main-color);
 }
 
 .team-crev2 .item:hover .img .social {

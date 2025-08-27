@@ -5,7 +5,7 @@
 <nav class="navbar navbar-expand-lg bord blur">
     <div class="container o-hidden">
         <!-- Logo -->
-        <a class="logo icon-img-100" href="#">
+        <a class="logo icon-img-100" href="/">
             @if($profileData && $profileData->logo)
                 <img src="{{ asset('storage/' . $profileData->logo) }}" alt="logo" />
             @else
