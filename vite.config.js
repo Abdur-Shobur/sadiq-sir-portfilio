@@ -1,0 +1,32 @@
+import { defineConfig } from "vite";
+import laravel from "laravel-vite-plugin";
+
+export default defineConfig({
+    plugins: [
+        laravel({
+            input: [
+                "resources/css/app.css",
+                "resources/css/plugins.css",
+                "resources/css/style.css",
+                "resources/js/app.js",
+            ],
+            refresh: true,
+        }),
+    ],
+    build: {
+        rollupOptions: {
+            output: {
+                assetFileNames: (assetInfo) => {
+                    let extType = assetInfo.name.split(".").at(1);
+                    if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
+                        extType = "img";
+                    }
+                    return `assets/${extType}/[name]-[hash][extname]`;
+                },
+                chunkFileNames: "assets/js/[name]-[hash].js",
+                entryFileNames: "assets/js/[name]-[hash].js",
+            },
+        },
+    },
+    publicDir: "public",
+});
