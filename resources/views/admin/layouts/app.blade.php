@@ -9,7 +9,7 @@
     <style>
         .sidebar {
             min-height: 100vh;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1b1b1bff 0%, #110f16ff 100%);
             color: white;
             transition: transform 0.3s ease-in-out;
         }
@@ -44,11 +44,11 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.08);
         }
         .stats-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0b0e38ff 0%, #030214ff 100%);
             color: white;
         }
         .btn-primary {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0b0e38ff 0%, #030214ff 100%);
             border: none;
         }
         .btn-primary:hover {
@@ -81,7 +81,7 @@
             left: 0;
             width: 280px;
             height: 100vh;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #161616ff 100%, #0b0c0fff 100%);
             color: white;
             z-index: 1050;
             transform: translateX(-100%);
